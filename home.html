@@ -22,12 +22,13 @@
             align-items: center;
             height: 100vh;
             text-align: center;
+            padding: 20px;
         }
 
         h1 {
             color: #2c3e50;
             font-size: 2.5em;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         p {
@@ -39,11 +40,48 @@
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Image Container */
+        .image-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Specific sizes */
+        .cpu1 {
+            width: 250px; 
+            height: auto;
+        }
+
+        .cpu2 {
+            width: 350px; /* Increased size for cpu2.png */
+            height: auto;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to PC Components Study</h1>
     <p>Select an option from the menu to learn about different aspects of a PC.</p>
+
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="cpu1.png" alt="CPU Image 1" class="cpu1">
+        <img src="cpu2.png" alt="CPU Image 2" class="cpu2">
+    </div>
 </body>
 </html>

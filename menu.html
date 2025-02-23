@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PC Components Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+        nav {
+            width: 25%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+        }
+        nav a {
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 3px;
+        }
+        iframe {
+            width: 75%;
+            height: 100vh;
+            border: none;
+            position: fixed;
+            top: 0;
+            left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html" target="content">Home</a>
+        <a href="components.html" target="content">PC Components</a>
+        <a href="procedure.html" target="content">Procedure</a>
+        <a href="observation.html" target="content">Observation</a>
+    </nav>
+    <iframe name="content" src="home.html"></iframe>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Components Study</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 250px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #1a252f;
+        }
+
+        /* Main Content */
+        main {
+            margin-left: 250px;
+            width: calc(100% - 250px);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                width: 200px;
+            }
+            main {
+                margin-left: 200px;
+                width: calc(100% - 200px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+                text-align: center;
+            }
+            nav h2 {
+                margin-bottom: 10px;
+            }
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                padding: 10px;
+            }
+            main {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>PC Components Study</h2>
+        <a href="home.html" target="content">Home</a>
+        <a href="components.html" target="content">PC Components</a>
+        <a href="procedure.html" target="content">Procedure</a>
+        <a href="observation.html" target="content">Observation</a>
+    </nav>
+    <main>
+        <iframe name="content" src="home.html"></iframe>
+    </main>
+</body>
+</html>

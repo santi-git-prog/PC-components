@@ -23,6 +23,21 @@
             height: 100vh;
             text-align: center;
             padding: 20px;
+            position: relative;
+        }
+
+        /* Top Right Corner Names */
+        .names {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: right;
         }
 
         h1 {
@@ -69,12 +84,19 @@
         }
 
         .cpu2 {
-            width: 350px; /* Increased size for cpu2.png */
+            width: 350px;
             height: auto;
         }
     </style>
 </head>
 <body>
+    <!-- Names Section -->
+    <div class="names">
+        M SANTHOSH KUMAR 24Z361<br>
+        R SABARI UMESH 24Z356<br>
+        G ROHITH 24Z353
+    </div>
+
     <h1>Welcome to PC Components Study</h1>
     <p>Select an option from the menu to learn about different aspects of a PC.</p>
 
